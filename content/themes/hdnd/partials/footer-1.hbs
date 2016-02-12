@@ -1,0 +1,66 @@
+<div class="footer-1 ff-section">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<aside class="widget widget_text">
+					<p>
+						<a href="{{@blog.url}}">
+							{{#if @blog.logo}}
+								<img
+										class="logo-desktop logo-light"
+										src="{{@blog.logo}}"
+										alt="{{@blog.title}}"
+										width="55"
+										/>
+							{{else}}
+								<img
+										class="logo-desktop logo-light"
+										src="{{ asset "images/header/logo-desktop-light@2x.png"}}"
+										alt="{{@blog.title}}"
+										width="55"
+										/>
+							{{/if}}
+						</a>
+					</p>
+					<p>Ullamco laboris nisi ut consectetur adipiscing elit, sed do eiusmod.</p>
+				</aside>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<aside class="widget widget_tag_cloud">
+					<h3 class="widget-title">Tags</h3>
+					<div class="tagcloud">
+						<a href="/tag/art/">art</a>
+						<a href="/tag/books/">books</a>
+						<a href="/tag/history/">history</a>
+						<a href="/tag/hobby/">hobby</a>
+						<a href="/tag/london/">london</a>
+						<a href="/tag/modernism/">modernism</a>
+						<a href="/tag/movies/">movies</a>
+						<a href="/tag/music/">music</a>
+						<a href="/tag/photos/">photos</a>
+						<a href="/tag/tokyo/">tokyo</a>
+						<a href="/tag/video/">video</a>
+					</div>
+				</aside>
+			</div>
+
+			<div class="clear hidden-md hidden-lg"></div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<aside class="widget widget_recent_entries">
+					<h3 class="widget-title">Recent Posts</h3>
+					<div class="widget widget_recent_entries_ajax"><!-- this is filled by AJAX --></div>
+				</aside>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<aside class="widget widget_twitter">
+					<a class="twitter-timeline" href="https://twitter.com/_freshface" data-widget-id="654192837454598145">Tweets by @_freshface</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</aside>
+			</div>
+		</div>
+	</div>
+</div>

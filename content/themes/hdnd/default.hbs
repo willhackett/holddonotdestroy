@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{! Document Settings }}
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	{{! Page Meta }}
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--<link rel="icon" type="image/png" sizes="32x32" href="{{asset "images/favicon.png"}}">-->
+
+	{{! Styles'n'Scripts }}
+
+	<link rel="stylesheet" type="text/css" href="{{ asset "libs/fonts/font-awesome/css/font-awesome.min.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset "libs/fonts/ff-font-zocial/ff-font-zocial.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset "libs/fonts/simple-line-icons/simple-line-icons.css"}}" />
+
+	<link rel="stylesheet" type="text/css" href="{{ asset "css/screen.min.css"}}" />
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,400italic,700italic" />
+
+	<style type='text/css'>
+
+		/* global body text */
+		body, html{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* inputs */
+		input, textarea{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* buttons */
+		input[type=submit], button[type=submit]{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* code */
+		code, pre{ font-family: 'Courier New', Courier, monospace; }
+
+		/* blockquotes */
+		blockquote{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* headers */
+		h1, h2, h3, h4, h5, h6{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* page post title */
+		h3.post-title, .insert-article-title, .portfolio-cat-1.ff-section .portfolio-cat-1__item h3, .punchline{
+			font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		}
+
+		/* small text */
+		.blog-post-1.ff-section .post-footer,
+		.blog-post-1.ff-section .read-more-button,
+		.blog-post-1.ff-section .post-meta__block,
+		.blog-post-1.ff-section .post-date,
+		.pagination-1.ff-section .pagination,
+		.portfolio-cat-1.ff-section .portfolio-cat-1__filter,
+		.portfolio-cat-1.ff-section .portfolio-cat-1__tags,
+		.comment-respond #cancel-comment-reply-link
+		{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* menu button label */
+		.header-1.ff-section .menu-button__label{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* side menu navigation */
+		.side-menu-1.ff-section .navigation{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* footer body text */
+		.footer-1.ff-section, .footer-2.ff-section{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+		/* footer widget title */
+		h3.widget-title{ font-family: 'Raleway', Helvetica, Arial, sans-serif; }
+
+	</style>
+
+	{{! Ghost outputs important style and meta data with this tag }}
+	{{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed side-menu-closed
+posts-cookie-opening
+{{!
+Add / remove class to achieve behaviour in loop:
+posts-opened         ==> Always expanded between page reloads
+posts-closed         ==> Always collapsed between page reloads
+posts-cookie-opening ==> Use cookies to remember which posts are expanded/collapsed between page reloads
+}}"
+data-disqus_shortname="holddonotdestroy">
+
+<div class="master-wrapper">
+	<header class="header">
+
+		{{> "header"}}
+
+	</header>
+	<div class="content-wrapper">
+		<main class="main">
+
+			{{! Everything else gets inserted here }}
+			{{{body}}}
+
+		</main>
+		<footer class="footer">
+
+			{{> "footer-2"}}
+
+		</footer>
+		<a class="content-wrapper__overlay" href=""></a>
+	</div>
+
+	{{navigation}}
+
+</div>
+
+{{> 'comments-modal' }}
+
+
+<div class="breakpoint"></div>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+<script type="text/javascript" src="{{ asset "js/jquery-1.11.3.min.js"}}"></script>
+
+<script type="text/javascript" src="{{ asset "libs/background-check/background-check.min.js"}}"></script>
+
+<script type="text/javascript" src="{{ asset "js/all-in-one.min.js"}}"></script>
+
+</body>
+</html>

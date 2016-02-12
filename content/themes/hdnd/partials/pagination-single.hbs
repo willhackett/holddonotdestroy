@@ -1,0 +1,34 @@
+<div class="pagination-1 pagination-single-1 ff-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="pagination clearfix">
+				<div class="col-xs-6">
+					{{#next_post}}
+						<a href="{{url}}" class="prev">
+							<i class="fa fa-angle-left"></i>
+							<span class="pagination-left-text">
+								{{title}}
+							</span>
+						</a>
+					{{/next_post}}
+				</div>
+				<div class="col-xs-6">
+					{{#prev_post}}
+						<a href="{{url}}" class="next">
+							<span class="pagination-right-text">
+								{{title}}
+							</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					{{/prev_post}}
+				</div>
+				<div class="grid-button">
+					<a href="{{@blog.url}}">
+						<i class="fa fa-th"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

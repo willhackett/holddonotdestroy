@@ -1,0 +1,24 @@
+<div class="loader-1 ff-block loader-type-1">
+	<div class="vcenter-wrapper">
+		<div class="vcenter">
+			<span>
+				{{#if @blog.logo}}
+					<img
+							class="logo-desktop"
+							src="{{@blog.logo}}"
+							alt="{{@blog.title}}"
+							width="107"
+							>
+				{{else}}
+					<img
+							class="logo-desktop"
+							src="{{ asset "images/loader/loader@2x.png"}}"
+							alt="{{@blog.title}}"
+							width="107"
+							/>
+				{{/if}}
+			</span>
+			<div class="spinner"></div>
+		</div>
+	</div>
+</div>

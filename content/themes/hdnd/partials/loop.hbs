@@ -1,0 +1,82 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+	{{> "featured-image"}}
+
+	<div id="post-{{id}}" class="blog-post-1 ff-section {{post_class}}">
+		<div class="content-area__container container-fluid">
+			<div class="row">
+				<div class="content-area__column col-sm-8 col-sm-offset-2">
+					<div class="post-block">
+						<div class="post-header">
+							<div class="post-expander">
+								<div class="post-date">
+									<a href="{{url}}">
+										<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+									</a>
+								</div>
+							</div>
+							<h3 class="post-title post-expand-toggle">
+								<a href="{{url}}">
+									{{title}}
+								</a>
+							</h3>
+							<div class="post-collapser">
+								<a class="read-more-button post-expand-toggle" href="{{url}}">
+									Read More<i class="fa fa-angle-right"></i>
+								</a>
+							</div>
+							<div class="post-expander">
+								<div class="post-meta">
+									<div class="post-meta__block">
+										<div class="post-meta__author">
+											<i class="icon-user"></i>
+											{{author}}
+										</div>
+									</div>
+									<div class="post-meta__block">
+										{{tags prefix=" <i class='icon-tag'></i> "}}
+									</div>
+									<div class="post-meta__block">
+										<i class="icon-bubble"></i>
+										<a class="comments-popup-link disqus-comment-count" href="{{@blog.url}}{{url}}#disqus_thread" data-disqus-identifier="{{id}}">
+											0 Comments
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="post-expander">
+							<div class="post-content">
+								{{content}}
+							</div>
+							<div class="post-footer clearfix">
+								<div class="post-footer__left">
+									<a class="post-footer__button" href="{{url}}">
+										<i class="icon-link"></i>
+									<span class="post-footer__button-text">
+										Permalink
+									</span>
+									</a>
+									{{> "social-share"}}
+								</div>
+								<div class="post-footer__right">
+									<span class="post-footer__button">
+										<span class="post-footer__button-text">
+											<a class="comments-popup-link disqus-comment-count" href="{{@blog.url}}{{url}}#disqus_thread" data-disqus-identifier="{{id}}">
+												0 Comments
+											</a>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

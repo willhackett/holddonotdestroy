@@ -1,0 +1,7 @@
+.responsive-image-1.ff-block 	{
+	position: relative;
+}
+
+body.no-js img.responsive-image-1.ff-block 	{
+	display: none;
+}

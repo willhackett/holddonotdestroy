@@ -1,0 +1,33 @@
+<div class="pagination-1 ff-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="pagination clearfix">
+
+					{{#if prev}}
+						<a class="prev page-numbers" href="{{page_url prev}}">
+							<i class="fa fa-angle-left"></i>
+						<span class="pagination-left-text">
+							Newer Posts
+						</span>
+						</a>
+					{{/if}}
+
+					<div class="pagination-numbers-wrapper">
+						<a href="#" class="page_X_of_X">Page {{page}} of {{pages}}</a>
+					</div>
+
+					{{#if next}}
+						<a class="next page-numbers" href="{{page_url next}}">
+						<span class="pagination-right-text">
+							Older Posts
+						</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+					{{/if}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

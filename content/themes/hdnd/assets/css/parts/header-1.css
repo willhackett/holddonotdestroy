@@ -1,0 +1,445 @@
+.header-1.ff-section 	{
+	position: fixed;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.03);
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.03);
+	width: 100%;
+
+	-webkit-transition: 0.3s -webkit-transform ease;
+	-moz-transition: 0.3s -moz-transform ease;
+	-o-transition: 0.3s -o-transform ease;
+	transition: 0.3s transform ease;
+}
+
+body.side-menu-opened .header-1.ff-section  	{
+	-webkit-transform: translate3d(-210px,0,0);
+	-moz-transform: translate3d(-210px,0,0);
+	-ms-transform: translate3d(-210px,0,0);
+	-o-transform: translate3d(-210px,0,0);
+	transform: translate3d(-210px,0,0);
+}
+
+.header-1.ff-section .logo-holder 	{
+	float: left;
+	pointer-events: auto;
+}
+
+.header-1.ff-section .logo-wrapper 	{
+}
+
+.header-1.ff-section .logo-wrapper a 	{
+	display: block;
+    padding: 12px 15px;
+
+	-webkit-transition: 0.18s opacity linear;
+	-moz-transition: 0.18s opacity linear;
+	-o-transition: 0.18s opacity linear;
+	transition: 0.18s opacity linear;
+}
+
+.header-1.ff-section .logo__inner 	{
+	display: block;
+}
+
+.header-1.ff-section .logo-wrapper a:focus,
+.header-1.ff-section .logo-wrapper a:hover 	{
+	text-decoration: none;
+	opacity: 0.5;
+	outline: none;
+}
+
+.header-1.ff-section h1 	{
+	font-size: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.header-1.ff-section .logo 	{
+	position: relative;
+	z-index: 1;
+}
+
+.header-1.ff-section .logo h1 	{
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 4px;
+	font-weight: 500;
+	text-transform: none;
+	color: #444445;
+	-webkit-transition: 0.3131s color ease;
+	-moz-transition: 0.3131s color ease;
+	-o-transition: 0.3131s color ease;
+	transition: 0.3131s color ease;
+}
+
+.header-1.ff-section .logo h1 	{
+
+}
+
+.header-1.ff-section .logo .background--light h1  	{
+	color: #444445;
+}
+
+.header-1.ff-section .logo .background--dark h1 {
+	color: #ffffff;
+}
+
+.header-1.ff-section .logo img.logo-mobile 	{
+	display: block;
+}
+
+.header-1.ff-section .logo img.logo-desktop 	{
+	display: none;
+}
+
+.header-1.ff-section .logo img.logo-light,
+.header-1.ff-section .logo .background--light img.logo-light,
+.header-1.ff-section .logo .background--dark img.logo-dark 	{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 20px;
+	left: 15px;	
+
+	-webkit-transition: 0s visibility 0.3131s ease, 0.3131s opacity 0s ease;
+	-moz-transition: 0s visibility 0.3131s ease, 0.3131s opacity 0s ease;
+	-o-transition: 0s visibility 0.3131s ease, 0.3131s opacity 0s ease;
+	transition: 0s visibility 0.3131s ease, 0.3131s opacity 0s ease;
+}
+
+.header-1.ff-section .logo img.logo-dark,
+.header-1.ff-section .logo .background--light img.logo-dark,
+.header-1.ff-section .logo .background--dark img.logo-light 	{
+	visibility: visible;
+	opacity: 1;
+	position: static;
+	
+	-webkit-transition: 0s visibility 0s ease, 0.3131s opacity 0s ease;
+	-moz-transition: 0s visibility 0s ease, 0.3131s opacity 0s ease;
+	-o-transition: 0s visibility 0s ease, 0.3131s opacity 0s ease;
+	transition: 0s visibility 0s ease, 0.3131s opacity 0s ease;
+}
+
+.header-1.ff-section .menu-holder 	{
+	float: right;
+	pointer-events: auto;
+}
+
+.header-1.ff-section .menu-button 	{
+	display: block;
+    padding: 12px 15px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+	position: relative;
+	z-index: 1;
+	outline: none;
+	/*color: rgba(0,0,0,0.72);*/
+	color: rgba(0,0,0,0.72);
+	-webkit-transition: 0.18s opacity linear;
+	-moz-transition: 0.18s opacity linear;
+	-o-transition: 0.18s opacity linear;
+	transition: 0.18s opacity linear;
+
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	-ms-transform: scale(0.85);
+	-o-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.header-1.ff-section .menu-button__inner 	{
+	display: block;
+}
+
+body.side-menu-opened .header-1.ff-section .menu-button 	{
+	opacity: 1;
+}
+
+.header-1.ff-section .menu-button .background--light 	{
+	color: rgba(0,0,0,0.72);
+}
+
+.header-1.ff-section .menu-button .background--dark 	{
+	color: rgba(255,255,255,0.95);
+}
+
+.header-1.ff-section .menu-button:focus,
+.header-1.ff-section .menu-button:hover 	{
+	text-decoration: none;
+}
+
+.header-1.ff-section .menu-button__label 	{
+	display: none;
+}
+
+.header-1.ff-section .menu-button__lines 	{
+	display: block;
+	float: left;
+	position: relative;
+	width: 20px;
+	height: 16px;
+}
+
+.header-1.ff-section .menu-button__line-1,
+.header-1.ff-section .menu-button__line-2,
+.header-1.ff-section .menu-button__line-3 	{
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: rgba(0,0,0,0.72);
+	position: absolute;
+	left: 0;
+
+	-webkit-transition: 0.29s -webkit-transform ease, 0.29s width ease, 0.41s top ease, 0.41s left ease, 0.1s opacity ease, 0.3131s background-color ease;
+	-moz-transition: 0.29s -moz-transform ease, 0.29s width ease, 0.41s top ease, 0.41s left ease, 0.1s opacity ease, 0.3131s background-color ease;
+	-o-transition: 0.29s -o-transform ease, 0.29s width ease, 0.41s top ease, 0.41s left ease, 0.1s opacity ease, 0.3131s background-color ease;
+	transition: 0.29s transform ease, 0.29s width ease, 0.41s top ease, 0.41s left ease, 0.1s opacity ease, 0.3131s background-color ease;
+	/*transition: 2s all ease-out;*/
+}
+
+.header-1.ff-section .menu-button__line-1 	{
+	top: 1px;
+}
+
+.header-1.ff-section .menu-button__line-2 	{
+	top: 7px;
+}
+
+.header-1.ff-section .menu-button__line-3 	{
+	top: 13px;
+}
+
+body.side-menu-opened .header-1.ff-section .menu-button__line-1 	{
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 7px;
+}
+
+body.side-menu-opened .header-1.ff-section .menu-button__line-2 	{
+	opacity: 0;
+}
+
+body.side-menu-opened .header-1.ff-section .menu-button__line-3 	{
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 7px;
+}
+
+.header-1.ff-section .vcenter-wrapper 	{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.header-1.ff-section .vcenter 	{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ********** */
+/* RESPONSIVE */
+/* ********** */
+
+@media (min-width: 768px) {
+
+	.header-1.ff-section 	{
+		position: fixed;
+		background: none;
+
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	body.side-menu-opened .header-1.ff-section  	{
+		-webkit-transform: translate3d(-268px,0,0);
+		-moz-transform: translate3d(-268px,0,0);
+		-ms-transform: translate3d(-268px,0,0);
+		-o-transform: translate3d(-268px,0,0);
+		transform: translate3d(-268px,0,0);
+	}
+
+	.header-1.ff-section .logo-wrapper a 	{
+		padding: 54px 56px; /*51*/
+	}
+
+	.header-1.ff-section .logo h1 	{
+		font-size: 21px;
+		letter-spacing: 7px;
+	}
+
+	.header-1.ff-section .logo img.logo-light,
+	.header-1.ff-section .logo .background--light img.logo-light,
+	.header-1.ff-section .logo .background--dark img.logo-dark 	{
+		top: 54px; /*51*/
+		left: 56px; /*51*/
+	}
+
+	.header-1.ff-section .menu-button 	{
+		padding: 54px 56px; /*51*/
+
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.header-1.ff-section .menu-button__label 	{
+		display: block;
+		float: left;
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 18px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-left: 9px;
+		-webkit-transition: 0.3131s color ease;
+		-moz-transition: 0.3131s color ease;
+		-o-transition: 0.3131s color ease;
+		transition: 0.3131s color ease;
+	}
+
+		/* Safari Typography Hacks */
+
+		@media screen and (-webkit-min-device-pixel-ratio:0) {
+		    .header-1.ff-section .menu-button__label {
+		    	font-weight: 600;
+		        padding-top: 1px;
+		    }
+
+		    .header-1.ff-section .menu-button .background--dark .menu-button__label 	{
+		    	font-weight: 700;
+		        padding-top: 1px;
+		    }
+		}
+
+
+	.header-1.ff-section .menu-button__label__text-closed 	{
+		display: block;
+	}
+
+	.header-1.ff-section .menu-button__label__text-opened 	{
+		display: none;
+	}
+
+	body.side-menu-opened .header-1.ff-section .menu-button__label__text-closed 	{
+		display: none;
+	}
+
+	body.side-menu-opened .header-1.ff-section .menu-button__label__text-opened 	{
+		display: block;
+	}
+
+	.header-1.ff-section .menu-button__lines 	{
+		width: 17px;
+		height: 18px;
+	}
+
+	.header-1.ff-section .menu-button__line-1,
+	.header-1.ff-section .menu-button__line-2,
+	.header-1.ff-section .menu-button__line-3 	{
+		width: 17px;
+	}
+
+	.header-1.ff-section .menu-button__line-1 	{
+		top: 3px;
+	}
+
+	.header-1.ff-section .menu-button__line-2 	{
+		top: 8px;
+		
+	}
+
+	.header-1.ff-section .menu-button__line-3 	{
+		top: 13px;
+	}
+
+	.header-1.ff-section .menu-button .background--light .menu-button__line-1,
+	.header-1.ff-section .menu-button .background--light .menu-button__line-2,
+	.header-1.ff-section .menu-button .background--light .menu-button__line-3 	{
+		background-color: rgba(0,0,0,0.72);
+	}
+
+	.header-1.ff-section .menu-button .background--dark .menu-button__line-1,
+	.header-1.ff-section .menu-button .background--dark .menu-button__line-2,
+	.header-1.ff-section .menu-button .background--dark .menu-button__line-3 	{
+		background-color: rgba(255,255,255,0.95);
+	}
+
+	body.side-menu-opened .header-1.ff-section .menu-button__line-1 	{
+		top: 8px;
+		left: 3px;
+	}
+
+	body.side-menu-opened .header-1.ff-section .menu-button__line-3 	{
+		top: 8px;
+		left: 3px;
+	}
+
+	.header-1.ff-section .logo img.logo-mobile 	{
+		display: none;
+	}
+
+	.header-1.ff-section .logo img.logo-desktop 	{
+		display: block;
+	}
+	
+}
+
+@media (min-width: 992px) {
+
+	html.scroll-lock .header-1.ff-section {
+		padding-right: 15px;
+	}
+
+	.header-1.ff-section .logo-wrapper a 	{
+		padding: 64px 66px;
+	}
+
+	.header-1.ff-section .logo img.logo-light,
+	.header-1.ff-section .logo .background--light img.logo-light,
+	.header-1.ff-section .logo .background--dark img.logo-dark 	{
+		top: 64px;
+		left: 66px;
+	}
+
+	.header-1.ff-section .menu-button 	{
+		padding: 64px 66px;
+	}
+
+	/* Chrome Typography Hacks */
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    .header-1.ff-section .menu-button__label {
+	    	font-weight: 700;
+	        padding-top: 1px;
+	    }
+
+	    .header-1.ff-section .menu-button .background--dark .menu-button__label 	{
+	    	font-weight: 600;
+	    	margin-right: -1px;
+	    }
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.header-1.ff-section .menu-button:hover 	{
+		opacity: 0.5 !important;
+	}
+
+}
+
+

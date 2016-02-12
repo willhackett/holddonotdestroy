@@ -1,0 +1,212 @@
+.pagination-1.ff-section 	{
+	background-color: #fafafa;
+	padding: 0;
+	line-height: 31px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.pagination-1.ff-section > .container-fluid 	{
+	max-width: 1170px;
+}
+
+.pagination-1.ff-section .vcenter-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.pagination-1.ff-section .vcenter {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pagination-1.ff-section .pagination 	{
+	text-align: center;
+	display: block;
+	font-size: 0;
+	margin: -1px 0 0 0;
+	font-weight: 400;
+	position: relative;
+}
+
+.pagination-1.ff-section .pagination a,
+.pagination-1.ff-section .pagination .dots 	{
+	display: inline-block;
+	font-size: 12px;
+	padding: 16px 10px;
+	margin: 0;
+	color: #989899;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-transition: 0.18s color linear;
+	-moz-transition: 0.18s color linear;
+	-o-transition: 0.18s color linear;
+	transition: 0.18s color linear;
+}
+
+.pagination-1.ff-section .pagination .grid-button a 	{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.pagination-1.ff-section .pagination a:focus,
+.pagination-1.ff-section .pagination a:hover 	{
+	outline: none;
+	text-decoration: none;
+	color: #444445;
+}
+
+.pagination-1.ff-section .pagination a.active 	{
+	color: #444445;
+	border-top: 1px solid #989899;
+	padding-top: 15px;
+}
+
+.pagination-1.ff-section .pagination .prev,
+.pagination-1.ff-section .pagination .next,
+.pagination-1.ff-section .pagination .grid 	{
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding: 19px 0 20px 0;
+	line-height: 24px;
+}
+.pagination-1.ff-section .pagination .prev 	{
+	position: absolute;
+	top: 0;
+	left: 15px;
+}
+
+.pagination-single-1.ff-section .pagination .col-xs-6:first-child 	{
+	padding-right: 40px;
+}
+
+.pagination-single-1.ff-section .pagination .col-xs-6:last-child 	{
+	padding-left: 40px;
+}
+
+.pagination-single-1.ff-section .pagination .grid-button 	{
+	width: 80px;
+	margin: 0 0 0 -40px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.pagination-single-1.ff-section .pagination .prev 	{
+	position: static;
+	float: left;
+	text-align: left;
+}
+
+.pagination-1.ff-section .pagination .prev i 	{
+	font-size: 22px;
+	margin: 0 10px 0 0;
+}
+
+
+.pagination-1.ff-section .pagination .next 	{
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+.pagination-single-1.ff-section .pagination .next 	{
+	position: static;
+	float: right;
+	text-align: right;
+}
+
+.pagination-1.ff-section .pagination .next i 	{
+	font-size: 21px;
+	margin: 0 0 0 10px;
+}
+
+.pagination-1.ff-section .pagination-left-text,
+.pagination-1.ff-section .pagination-right-text 	{
+	display: none;
+}
+
+.pagination-1.ff-section .screen-reader-text 	{
+	display: none;
+}
+
+/* ********** */
+/* RESPONSIVE */
+/* ********** */
+
+@media (min-width: 768px) {
+
+	.pagination-1.ff-section .pagination a,
+	.pagination-1.ff-section .pagination .dots 	{
+		font-size: 15px;
+	}
+
+
+}
+
+@media (min-width: 992px) {
+
+	.pagination-1.ff-section 	{
+		padding: 0;
+	}
+
+	.pagination-1.ff-section .pagination a,
+	.pagination-1.ff-section .pagination .dots 	{
+		font-size: 16px;
+		padding: 22px 9px 24px 9px;
+		margin: 0 5px;
+	}
+
+	.pagination-1.ff-section .pagination a.active 	{
+		padding-top: 21px;
+	}
+
+	.pagination-1.ff-section .pagination .prev,
+	.pagination-1.ff-section .pagination .next 	{
+		padding: 26px 0 27px 0;
+	}
+
+	.pagination-1.ff-section .pagination-left-text,
+	.pagination-1.ff-section .pagination-right-text 	{
+		display: inline;
+	}
+
+	.pagination-1.ff-section .pagination .prev 	{
+		left: 0;
+	}
+
+	.pagination-1.ff-section .pagination .prev i 	{
+		font-size: 14px;
+		position: relative;
+		left: 0;
+		-webkit-transition: 0.14s all ease-out;
+		-moz-transition: 0.14s all ease-out;
+		-o-transition: 0.14s all ease-out;
+		transition: 0.14s all ease-out;
+	}
+
+	.pagination-1.ff-section .pagination .prev:hover i 	{
+		left: -4px;
+	}
+
+	.pagination-1.ff-section .pagination .next 	{
+		right: 0;
+	}
+
+	.pagination-1.ff-section .pagination .next i 	{
+		font-size: 14px;
+		position: relative;
+		left: 0;
+		-webkit-transition: 0.14s all ease-out;
+		-moz-transition: 0.14s all ease-out;
+		-o-transition: 0.14s all ease-out;
+		transition: 0.14s all ease-out;
+	}
+
+	.pagination-1.ff-section .pagination .next:hover i 	{
+		left: 4px;
+	}
+
+}

@@ -1,0 +1,52 @@
+<div class="side-menu-1 ff-section side-menu-1__style--black">
+	<div class="side-menu">
+		<div class="side-menu-inner">
+
+			<div class="logo-wrapper">
+				<a href="{{@blog.url}}" class="logo background-check">
+					{{#if @blog.logo}}
+						<img
+								class="logo-desktop"
+								src="{{@blog.logo}}"
+								alt="{{@blog.title}}"
+								width="75"
+								/>
+						<img
+								class="logo-mobile"
+								src="{{@blog.logo}}"
+								alt="{{@blog.title}}"
+								width="52"
+								/>
+					{{else}}
+						<img
+								class="logo-desktop"
+								src="{{ asset "images/navigation/logo-desktop@2x.png"}}"
+								alt="{{@blog.title}}"
+								width="75"
+								/>
+						<img
+								class="logo-mobile"
+								src="{{ asset "images/navigation/logo-mobile@2x.png"}}"
+								alt="{{@blog.title}}"
+								width="52"
+								/>
+					{{/if}}
+
+				</a>
+			</div>
+
+			<ul id="menu-navigation" class="navigation">
+				{{#foreach navigation}}
+					<li class="nav-{{slug}}{{#if current}} current_page_item{{/if}}" role="presentation">
+						<a href="{{url absolute="true"}}">{{label}}</a>
+					</li>
+				{{/foreach}}
+			</ul>
+
+		</div>
+
+		<ul class="side-menu__social">
+			{{> "social-links"}}
+		</ul>
+	</div>
+</div>

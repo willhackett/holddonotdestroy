@@ -1,0 +1,29 @@
+<a class="post-footer__button post-share__open-popup" href="">
+	<i class="icon-share"></i>
+	<span class="post-footer__button-text">
+		Share
+	</span>
+</a>
+<div class="post-share__popup">
+	<div class="vcenter-wrapper">
+		<div class="vcenter">
+			<a class="post-share__overlay post-share__close-popup" href=""></a>
+			<div class="post-share__inner">
+
+				<a class="post-share__network-link" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+				   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+					<i class="ff-font-zocial icon-twitter"></i>
+				</a>
+				<a class="post-share__network-link" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+				   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+					<i class="ff-font-zocial icon-facebook"></i>
+				</a>
+				<a class="post-share__network-link" href="https://plus.google.com/share?url={{url absolute="true"}}"
+				   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+					<i class="ff-font-zocial icon-google"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+</div>
